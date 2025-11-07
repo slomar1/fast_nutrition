@@ -17,7 +17,7 @@ V0.1 Roadmap: The "To-Do" List
 [✅] Create your main script file (e.g., `main.py` or `index.js`).
 
 
-[ ] Step 2: Define Your Data Structure (How will you represent a single food item?)
+[✅] Step 2: Define Your Data Structure (How will you represent a single food item?)
 Goal: Decide on a simple structure. A dictionary in Python is perfect.
 Example:
     {
@@ -30,20 +30,20 @@ Example:
     }
 
 
-[ ] Step 3: Create a "Mock" Database (Do NOT use an API yet)
+[✅] Step 3: Create a "Mock" Database (Do NOT use an API yet)
 Goal: Create a simple list or array containing 5-10 of your food item objects (from Step 2).
-[ ] Hard-code this list directly into your script file for now. This is your "database" for the MVP.
+[✅] Hard-code this list directly into your script file for now. This is your "database" for the MVP.
 
 
 [ ] Step 4: Build the Core Search Logic (Start simple: Write a function called `find_food_by_max_calories(max_cals)`.)
 Goal: Write a function that takes the user's criteria and your list of food as input.
-[To-Do] This function should:
+[ ] This function should:
     * Loop through your hard-coded list.
     * Check if an item's `calories` are less than or equal to `max_cals`.
     * If it is, add it to a `results` list.
     * Return the `results` list.
 Goal: Write a function called `find_food_by_min_protein(min_protein)`.
-* [To-Do] This function should:
+[ ] This function should:
     * Loop through your hard-coded list.
     * Check if an item's `protein_g` is greater than or equal to `min_protein`.
     * If it is, add it to a `results` list.
