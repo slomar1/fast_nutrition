@@ -1,8 +1,6 @@
 from data import sample_data
 
 
-
-
 def find_food_by_max_calories(max_cals):
 
     result = []

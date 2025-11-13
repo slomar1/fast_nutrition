@@ -1,10 +1,8 @@
 import search_functions as sf
 
 
-def header():
-     print("\nWelcome to the Fast Nutrition Advisor (WIP)") 
-
 def main_menu():
+     
      print( "1. Find Food by Maximum Calories\n"
             "2. Find Food by Minimum Calories\n"
             "3. Find Food by Minimum protein\n"
@@ -13,9 +11,11 @@ def main_menu():
             "6. Find Food by Maximum Carbs\n"
             "7. Quit Program\n")
 
+
 def menu_choices():
-    header()
+    
     main_menu()
+    
     while True:
         menu_choice = input("Please Choose One Option From Above: ")
 
@@ -27,7 +27,6 @@ def menu_choices():
                 except:
                     print("Invalid command!")
             print(sf.find_food_by_max_calories(num_value))
-            header()
             main_menu()
             continue  
 
@@ -39,7 +38,6 @@ def menu_choices():
                 except:
                     print("Invalid command!")
             print(sf.find_food_by_min_calories(num_value))
-            header()
             main_menu()
             continue
 
@@ -51,7 +49,6 @@ def menu_choices():
                 except:
                     print("Invalid command!")
             print(sf.find_food_by_min_protein(num_value))
-            header()
             main_menu()
             continue
 
@@ -63,7 +60,6 @@ def menu_choices():
                 except:
                     print("Invalid command!")
             print(sf.find_food_by_max_fat(num_value))
-            header()
             main_menu()
             continue
 
@@ -75,7 +71,6 @@ def menu_choices():
                 except:
                     print("Invalid command!")
             print(sf.find_food_by_min_fat(num_value))
-            header()
             main_menu()
             continue
             
@@ -87,7 +82,6 @@ def menu_choices():
                 except:
                     print("Invalid command!")
             print(sf.find_food_by_max_carbs(num_value))
-            header()
             main_menu()
             continue
 
@@ -96,4 +90,3 @@ def menu_choices():
 
         else:
             print("Invalid command!")
-            
