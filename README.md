@@ -35,15 +35,15 @@ Goal: Create a simple list or array containing 5-10 of your food item objects (f
 [✅] Hard-code this list directly into your script file for now. This is your "database" for the MVP.
 
 
-[ ] Step 4: Build the Core Search Logic (Start simple: Write a function called `find_food_by_max_calories(max_cals)`.)
+[✅] Step 4: Build the Core Search Logic (Start simple: Write a function called `find_food_by_max_calories(max_cals)`.)
 Goal: Write a function that takes the user's criteria and your list of food as input.
-[ ] This function should:
+[✅] This function should:
     * Loop through your hard-coded list.
     * Check if an item's `calories` are less than or equal to `max_cals`.
     * If it is, add it to a `results` list.
     * Return the `results` list.
 Goal: Write a function called `find_food_by_min_protein(min_protein)`.
-[ ] This function should:
+[✅] This function should:
     * Loop through your hard-coded list.
     * Check if an item's `protein_g` is greater than or equal to `min_protein`.
     * If it is, add it to a `results` list.
@@ -52,12 +52,13 @@ Goal: Write a function called `find_food_by_min_protein(min_protein)`.
 
 [ ] Step 5: Build the User Interface (CLI)
 Goal: Use simple `print` and `input` statements to interact with the user.
-[ ] Print a welcome message.
-[ ] Ask the user *what* they want to search for (e.g., "1 for calories", "2 for protein").
-[ ] Ask the user for their target value (e.g., "Enter max calories:").
-[ ] Call the correct search function (from Step 4) based on their input.
-[ ] Print the results in a clean, readable format.
+[✅] Print a welcome message.
+[✅] Ask the user *what* they want to search for (e.g., "1 for calories", "2 for protein").
+[✅] Ask the user for their target value (e.g., "Enter max calories:").
+[✅] Call the correct search function (from Step 4) based on their input.
+[✅] Print the results in a clean, readable format.
 [ ] Add a loop so the program runs again until the user types "exit".
+[ ] Inplement error handling.
 
 
 
