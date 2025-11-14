@@ -12,6 +12,15 @@ def main_menu():
             "7. Quit Program\n")
 
 
+def try_int(prompt):
+    while True:
+        try:
+            value = int(input(prompt))
+            return value
+        except:
+            print("Invalid command!")
+
+
 def menu_choices():
     
     main_menu()
@@ -20,67 +29,37 @@ def menu_choices():
         menu_choice = input("Please Choose One Option From Above: ")
 
         if menu_choice == "1":
-            while True:
-                try:
-                    num_value = int(input("What is the maximum amount of calories you would like?: "))
-                    break
-                except:
-                    print("Invalid command!")
+            num_value = try_int("What is the maximum amount of calories you would like?: ")
             print(sf.find_food_by_max_calories(num_value))
             main_menu()
             continue  
 
         elif menu_choice == "2":
-            while True:
-                try:
-                    num_value = int(input("What is the minimum amount of calories you would like?: "))
-                    break
-                except:
-                    print("Invalid command!")
+            num_value = try_int("What is the minimum amount of calories you would like?: ")
             print(sf.find_food_by_min_calories(num_value))
             main_menu()
             continue
 
         elif menu_choice == "3":
-            while True:
-                try:
-                    num_value = int(input("What is the minumum amount of protein you would like?: "))
-                    break
-                except:
-                    print("Invalid command!")
+            num_value = try_int("What is the minumum amount of protein you would like?: ")
             print(sf.find_food_by_min_protein(num_value))
             main_menu()
             continue
 
         elif menu_choice == "4":
-            while True:
-                try:
-                    num_value = int(input("What is the maximum amount of fat you would like?: "))
-                    break
-                except:
-                    print("Invalid command!")
+            num_value = try_int("What is the maximum amount of fat you would like?: ")
             print(sf.find_food_by_max_fat(num_value))
             main_menu()
             continue
 
         elif menu_choice == "5":
-            while True:
-                try:
-                    num_value = int(input("What is the minimum amount of fat you would like?: "))
-                    break
-                except:
-                    print("Invalid command!")
+            num_value = try_int("What is the minimum amount of fat you would like?: ")
             print(sf.find_food_by_min_fat(num_value))
             main_menu()
             continue
             
         elif menu_choice == "6":
-            while True:
-                try:
-                    num_value = int(input("What is the maximum amount of carbs you would like?: "))
-                    break
-                except:
-                    print("Invalid command!")
+            num_value = try_int("What is the maximum amount of carbs you would like?: ")
             print(sf.find_food_by_max_carbs(num_value))
             main_menu()
             continue
